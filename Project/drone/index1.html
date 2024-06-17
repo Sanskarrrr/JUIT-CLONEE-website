@@ -1,0 +1,52 @@
+<html>
+<head>
+<title> Drone Movement</title>
+<link rel="stylesheet" href="style1.css">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" ></script>
+
+</head>
+<body>
+    
+        
+
+    
+
+
+
+
+
+    <div id="banner">
+        <h1>ABOUT JUIT</h1>
+        <h3> JUIT is the best engineering college across India</h3>
+        <p>=>The JUIT was conceived by a joint vision of the Govt of Himachal Pradesh and the Founder Chairman of Jaypee Group Shri JaiPrakash Gaur in 2000. Land was provided on lease by the State Govt and the university was established by Act No 14 of 2002 vide Extraordinary Gazette Notification of the Govt of Himachal Pradesh dated May 23, 2002. The University Grants Commission accorded its approval under Section 2(f) of the UGC Act vide their Letter No. F 9-10/2002(CPP-1) dated 09 Dec 2002. The JUIT is also a member of the Association of Indian Universities (AIU).</p><br>
+        <p>=>The academic activities of JUIT commenced from July 2002 and currently offering undergraduate B. Tech degree programs in Bioinformatics, Biotechnology, Civil Engineering, Computer Science & Engineering, Electronics & Communication Engineering, Electronics & Computer Engineering and Information Technology.</p><br>
+        
+        <p>The University has been twice accredited by NAAC (2011 and 2017).</p>
+
+        <div id="drone-box">
+
+            <img src="images/drone.png" class="drone-pic">
+            <img src="images/drone-left.png" class="left-pic">
+            <img src="images/drone-right.png" class="right-pic">
+        </div>
+
+    </div>
+    <script>
+        $('#banner').mousemove(function(e){
+            var moveX = (e.pageX * -1/2)+300;
+            var moveY = (e.pageY * -1/3)+120;
+            $('#drone-box').css({
+                'transform': 'translate3d('+moveX+'px,'+moveY+'px,0)'   });
+        });
+    </script>
+</body>
+
+
+
+
+
+
+
+
+
+</html>

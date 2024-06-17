@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+
+ h1{
+    font-size: 40px;
+    justify-content: center;
+    display: flex;
+    color: lightblue;
+    
+}
+ h3{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+    justify-content: center;
+    display: flex;
+}
+p{
+    margin: 10px 0 40px;
+    
+    color: #fff;
+    justify-content: center;
+    display: flex;
+}
+
+
+
+
+
+
+#banner{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(images/back.png.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#drone-box{
+    margin: 150px auto;
+    
+    width: 200px;
+    position: relative;
+    transition: 2s;
+
+}
+.drone-pic{
+    width: 100%;
+}
+.left-pic{
+    width: 80px;
+    top: 0;
+    left: -11px;
+    position: absolute;
+    animation: rotation .2s linear infinite;
+}
+.right-pic{
+    width: 80px;
+    top: 0;
+ right: -11px;
+    position: absolute;
+    animation: rotation .2s linear infinite;
+}
+@keyframes  rotation{
+    100%{
+        transform: rotateY(360deg);
+    }
+}
+
